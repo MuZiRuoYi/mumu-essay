@@ -1,0 +1,33 @@
+export default {
+  siteTitle: '随笔',
+  subSiteTitle: '记录生活学习点滴',
+  author: '沐沐',
+  email: 'muziruoyi@outlook.com',
+  description: '',
+  copyright: 'Copyright © 2018-2021 · 豫ICP备18046091号-1',
+  tagColors: [
+    '#6699FF',
+    '#ff6347',
+    '#E87C25',
+    '#B5C334',
+    '#E01F54',
+    '#60C0DD',
+    '#82b6e9',
+    '#2e4783',
+    '#38b6b6',
+    '#D7504B',
+    '#F0805A',
+    '#27727B',
+    '#FE8463',
+    '#0a915d',
+    '#9BCA63',
+    '#a092f1',
+    '#ff6666',
+    '#3cb371',
+    '#d5b158',
+    '#C1232B',
+    '#F3A43B',
+    '#26C0C0'
+  ],
+  pageSize: 10
+};

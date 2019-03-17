@@ -1,0 +1,19 @@
+<div class="home">
+  <div class="home_articles">
+    <div
+      app-article-overview
+      class="home_article"
+      *ngFor="let article of articles"
+      [article]="article"
+      [tagColors]="viewStoreService.siteConfig.tagColors"
+    ></div>
+  </div>
+  <app-pagination
+    *ngIf="showPagination"
+    class="home_pagination"
+    [total]="total"
+    [currentPage]="currentPage"
+    [pageSize]="viewStoreService.siteConfig.pageSize"
+    [onPageChange]="onBindPageChange"
+  ></app-pagination>
+</div>

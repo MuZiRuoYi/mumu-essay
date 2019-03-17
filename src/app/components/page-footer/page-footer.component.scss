@@ -1,0 +1,19 @@
+.page-footer {
+  padding: 12px 0;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  background: #303f9f;
+
+  p {
+    line-height: 24px;
+  }
+
+  a {
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+
+    &:hover {
+      border-bottom-style: solid;
+      text-decoration-line: none;
+    }
+  }
+}

@@ -1,0 +1,123 @@
+@import './utility/variable.scss';
+
+.full-width {
+  width: 100%;
+}
+
+.mg-r {
+  margin-right: $space;
+}
+
+.mg-l {
+  margin-left: $space;
+}
+
+.mg-t {
+  margin-top: $space;
+}
+
+.mg-b {
+  margin-bottom: $space;
+}
+
+.pd-r {
+  padding-right: $space;
+}
+
+.pd-l {
+  padding-left: $space;
+}
+
+.pd-t {
+  padding-top: $space;
+}
+
+.pd-b {
+  padding-bottom: $space;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clearfix {
+  &::after {
+    content: ' ';
+    display: block;
+    clear: both;
+  }
+}
+
+.text-muted {
+  color: $gray;
+}
+
+.text-black {
+  color: $black;
+}
+
+.text-primary {
+  color: $primary;
+}
+
+.text-success {
+  color: $success;
+}
+
+.text-info {
+  color: $info;
+}
+
+.text-warning {
+  color: $warning;
+}
+
+.text-danger {
+  color: $danger;
+}
+
+.bg-muted {
+  background-color: $gray;
+}
+
+.bg-primary {
+  background-color: $primary;
+}
+
+.bg-success {
+  background-color: $success;
+}
+
+.bg-info {
+  background-color: $info;
+}
+
+.bg-warning {
+  background-color: $warning;
+}
+
+.bg-danger {
+  background-color: $danger;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.text-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.display-none {
+  display: none;
+}
+
+.visible-hidden {
+  visibility: hidden;
+}

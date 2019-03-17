@@ -1,0 +1,28 @@
+<div class="main" [ngClass]="{ hidden: viewStoreService.sideMenuVisible }">
+  <perfect-scrollbar class="main_content" (psScrollY)="handleScroll($event)" [config]="config">
+    <div
+      app-page-header
+      class="main_content-header"
+      [fixed]="viewStoreService.pageHeaderFixed"
+      [sideMenuVisible]="viewStoreService.sideMenuVisible"
+      [pageTitle]="viewStoreService.pageTitle"
+      [onChangeSideMenuLayout]="onBindChangeSideMenuLayout"
+    ></div>
+    <div class="main_content-page">
+      <div class="main_page_header">
+        <h1 class="header-title">{{ viewStoreService.siteConfig.siteTitle }}</h1>
+        <h3 class="header-subtitle">{{ viewStoreService.siteConfig.subSiteTitle }}</h3>
+      </div>
+      <router-outlet></router-outlet>
+    </div>
+    <div class="main_content-footer" app-page-footer [copyright]="viewStoreService.siteConfig.copyright"></div>
+  </perfect-scrollbar>
+  <div
+    app-page-menu
+    class="main_menu"
+    [siteConfig]="viewStoreService.siteConfig"
+    [onChangeSideMenuLayout]="onBindChangeSideMenuLayout"
+    [menus]="viewStoreService.pageMenus"
+    [onChangeSideMenuLayout]="onBindChangeSideMenuLayout"
+  ></div>
+</div>

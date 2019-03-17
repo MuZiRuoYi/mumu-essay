@@ -1,0 +1,18 @@
+<div class="article-overview">
+  <div class="article-time">{{ article.time }}</div>
+  <h2 class="article-title">
+    <a href="{{ getHref(article.path) }}">{{ article.title }}</a>
+  </h2>
+  <p class="article-content">
+    <span>{{ article.content }}</span
+    ><a href="{{ getHref(article.path) }}" class="read-all-link">阅读原文</a>
+  </p>
+  <div class="article-tags clearfix">
+    <a
+      class="float-left tag-btn"
+      *ngFor="let tag of article.tags; index as i"
+      [ngStyle]="{ backgroundColor: tagColors[i] }"
+      >{{ tag }}</a
+    >
+  </div>
+</div>

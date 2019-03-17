@@ -1,0 +1,58 @@
+import * as file0 from './arch-Linux-cmd.md';
+import * as file2 from './build-mine-githubpages.md';
+import * as file3 from './defined-hexo-theme.md';
+import * as file4 from './exploring-reasonml/01_About_01.md';
+import * as file5 from './exploring-reasonml/02_About_02.md';
+import * as file6 from './exploring-reasonml/03_Core_01.md';
+import * as file7 from './exploring-reasonml/04_Core_02.md';
+import * as file8 from './exploring-reasonml/05_Core_03.md';
+import * as file9 from './exploring-reasonml/06_Core_04.md';
+import * as file10 from './exploring-reasonml/07_Core_05.md';
+import * as file11 from './exploring-reasonml/08_Core_06.md';
+import * as file12 from './exploring-reasonml/09_Core_07.md';
+import * as file13 from './exploring-reasonml/10_Core_08.md';
+import * as file14 from './exploring-reasonml/11_core_09.md';
+import * as file15 from './exploring-reasonml/12_core_10.md';
+import * as file16 from './exploring-reasonml/13_core_11.md';
+import * as file17 from './exploring-reasonml/14_core_12.md';
+import * as file18 from './exploring-reasonml/15_core_13.md';
+import * as file19 from './frontend-note-settimeout.md';
+import * as file20 from './git-cmd.md';
+import * as file21 from './github-pages-https.md';
+import * as file22 from './hexo-to-mine-service.md';
+import * as file24 from './linux/01_disk_partition.md';
+import * as file25 from './linux/02_command.md';
+import * as file26 from './linux/03_power_dir.md';
+import * as file27 from './linux/04_dir_manage.md';
+import * as file28 from './reasonml-notebook.md';
+import * as file29 from './windwows-tips.md';
+export default [
+  { path: 'arch-Linux-cmd.md', file: file0 },
+  { path: 'build-mine-githubpages.md', file: file2 },
+  { path: 'defined-hexo-theme.md', file: file3 },
+  { path: 'exploring-reasonml/01_About_01.md', file: file4 },
+  { path: 'exploring-reasonml/02_About_02.md', file: file5 },
+  { path: 'exploring-reasonml/03_Core_01.md', file: file6 },
+  { path: 'exploring-reasonml/04_Core_02.md', file: file7 },
+  { path: 'exploring-reasonml/05_Core_03.md', file: file8 },
+  { path: 'exploring-reasonml/06_Core_04.md', file: file9 },
+  { path: 'exploring-reasonml/07_Core_05.md', file: file10 },
+  { path: 'exploring-reasonml/08_Core_06.md', file: file11 },
+  { path: 'exploring-reasonml/09_Core_07.md', file: file12 },
+  { path: 'exploring-reasonml/10_Core_08.md', file: file13 },
+  { path: 'exploring-reasonml/11_core_09.md', file: file14 },
+  { path: 'exploring-reasonml/12_core_10.md', file: file15 },
+  { path: 'exploring-reasonml/13_core_11.md', file: file16 },
+  { path: 'exploring-reasonml/14_core_12.md', file: file17 },
+  { path: 'exploring-reasonml/15_core_13.md', file: file18 },
+  { path: 'frontend-note-settimeout.md', file: file19 },
+  { path: 'git-cmd.md', file: file20 },
+  { path: 'github-pages-https.md', file: file21 },
+  { path: 'hexo-to-mine-service.md', file: file22 },
+  { path: 'linux/01_disk_partition.md', file: file24 },
+  { path: 'linux/02_command.md', file: file25 },
+  { path: 'linux/03_power_dir.md', file: file26 },
+  { path: 'linux/04_dir_manage.md', file: file27 },
+  { path: 'reasonml-notebook.md', file: file28 },
+  { path: 'windwows-tips.md', file: file29 }
+];

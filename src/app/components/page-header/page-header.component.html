@@ -1,0 +1,11 @@
+<div class="page-header" [ngClass]="{ fixed: fixed }">
+  <a class="header-menu-btn waves" [ngClass]="{ 'display-none': !sideMenuVisible }" (click)="onSwitchSideMenuLayout()">
+    <!-- <i class="fa fa-bars fa-lg"></i> -->
+    <fa-icon [icon]="faBars" size="lg"></fa-icon>
+  </a>
+  <div class="title" [ngClass]="{ visible: fixed }">{{ pageTitle }}</div>
+  <div class="search-wrapper" [ngClass]="{ visible: searchInput }">
+    <input type="text" class="search-input" name="search" id="search" placeholder="输入感兴趣的关键字" />
+    <a (click)="onSwitchSearch()" class="waves search-btn"><fa-icon [icon]="faSearch" size="lg"></fa-icon></a>
+  </div>
+</div>

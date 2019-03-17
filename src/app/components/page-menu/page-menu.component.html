@@ -1,0 +1,20 @@
+<div class="page-menu">
+  <a class="close-menu waves" (click)="onSwitchSideMenuLayout()"><fa-icon [icon]="faTimes" size="lg"></fa-icon> </a>
+  <div class="brand-wrap">
+    <div class="brand">
+      <img src="../../../assets/img/avatar.jpg" class="logo" />
+      <h3 class="brand-author">{{ siteConfig.author }}</h3>
+      <h5 class="brand-email">
+        <a href="mailto:muziruoyi@outlook.com">{{ siteConfig.email }}</a>
+      </h5>
+    </div>
+  </div>
+  <ul class="menu-list">
+    <li *ngFor="let menu of menus">
+      <a class="menu-item" [routerLink]="[menu.href]" routerLinkActive="active">
+        <fa-icon class="menu-item-icon" [icon]="menu.icon" size="lg"></fa-icon>
+        <span class="menu-item-text">{{ menu.name }}</span>
+      </a>
+    </li>
+  </ul>
+</div>

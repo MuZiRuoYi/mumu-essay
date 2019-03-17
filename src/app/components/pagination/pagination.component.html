@@ -1,0 +1,21 @@
+<div class="clearfix page-pagination">
+  <a
+    class="waves waves-effect page-btn"
+    [ngClass]="{ disabled: currentPage === 1 }"
+    (click)="onSwitchPage(currentPage - 1)"
+    >上一页</a
+  >
+  <a
+    *ngFor="let page of pages"
+    class="page-number page-btn"
+    [ngClass]="{ active: +page === currentPage, 'waves waves-effect': +page !== currentPage }"
+    (click)="onSwitchPage(page)"
+    >{{ page }}</a
+  >
+  <a
+    class="waves waves-effect page-btn"
+    [ngClass]="{ disabled: currentPage === pages.length }"
+    (click)="onSwitchPage(currentPage + 1)"
+    >下一页</a
+  >
+</div>

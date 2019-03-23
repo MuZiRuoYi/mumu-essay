@@ -1,7 +1,7 @@
-import { Component, OnInit, OnDestroy, ChangeDetectorRef } from '@angular/core';
+import { Component, OnInit, OnDestroy, ChangeDetectorRef, Input } from '@angular/core';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { SafeHtml } from '@angular/platform-browser';
-import { Article, ArticleHeader } from '../../interfaces';
+import { Article, ArticleHeader, SiteConfig } from '../../interfaces';
 import { articles, getArticlePage } from '../../../assets/articles';
 import { ViewStoreService } from '../../stores/view-store.service';
 
@@ -17,6 +17,7 @@ export class ArticleComponent implements OnInit, OnDestroy {
   public html: SafeHtml;
   public headers: ArticleHeader[];
   public activeHeader: String;
+  public siteConfig: SiteConfig;
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -36,6 +37,7 @@ export class ArticleComponent implements OnInit, OnDestroy {
       this.activeHeader = this.headers[0].number;
     });
     this.viewStoreService.addScrollListener('article.toc', this.onMainScroll.bind(this));
+    this.siteConfig = this.viewStoreService.siteConfig;
     window.addEventListener('resize', this.getHeaderTop.bind(this));
   }
 

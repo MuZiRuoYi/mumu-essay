@@ -4,9 +4,19 @@
       <h1 class="article-title">{{ article.title }}</h1>
       <h4 class="article-time">{{ article.time }}</h4>
       <div class="article-content marked-card" [innerHTML]="html | safeHtml"></div>
-      <div class="article-info clearfix"><div class="float-right article-author">沐沐</div></div>
-      <div class="article-tags">
-        <a class="float-left tag-btn" *ngFor="let tag of article.tags; index as i">{{ tag }}</a>
+      <div class="article-info clearfix">
+        <div class="float-right article-author">
+          <img src="../../../assets/img/avatar.jpg" class="logo" />
+          <h3 class="brand-author">{{ siteConfig.author }}</h3>
+        </div>
+      </div>
+      <div class="article-tags clearfix">
+        <a
+          class="float-left tag-btn"
+          *ngFor="let tag of article.tags; index as i"
+          [ngStyle]="{ backgroundColor: siteConfig.tagColors[i] }"
+          >{{ tag }}</a
+        >
       </div>
     </div>
     <div class="article-nav" [ngStyle]="{ top: pocTop + 'px' }">

@@ -36,6 +36,11 @@ export function getArticlePage(article: Article) {
       language ? hljs.highlightAuto(code, [language]).value : code
     }</pre>`;
   };
+  renderer.link = function(href, title, text) {
+    const pro = href.slice(0, 4);
+
+    return `<a href="${href}" title="${title || text}" target="${pro === 'http' ? '_blank' : ''}">${text}</a>`;
+  };
 
   marked.setOptions({ headerPrefix: 'mu-md-header', renderer });
 

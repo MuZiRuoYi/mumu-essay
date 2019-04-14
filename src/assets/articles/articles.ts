@@ -20,12 +20,13 @@ import * as file19 from './frontend-note-settimeout.md';
 import * as file20 from './git-cmd.md';
 import * as file21 from './github-pages-https.md';
 import * as file22 from './hexo-to-mine-service.md';
-import * as file24 from './linux/01_disk_partition.md';
-import * as file25 from './linux/02_command.md';
-import * as file26 from './linux/03_power_dir.md';
-import * as file27 from './linux/04_dir_manage.md';
-import * as file28 from './reasonml-notebook.md';
-import * as file29 from './windwows-tips.md';
+import * as file28 from './linux/01_disk_partition.md';
+import * as file29 from './linux/02_command.md';
+import * as file30 from './linux/03_power_dir.md';
+import * as file31 from './linux/04_dir_manage.md';
+import * as file32 from './linux/centos-vm.md';
+import * as file33 from './reasonml-notebook.md';
+import * as file34 from './windwows-tips.md';
 export default [
   { path: 'arch-Linux-cmd.md', file: file0 },
   { path: 'build-mine-githubpages.md', file: file2 },
@@ -49,10 +50,11 @@ export default [
   { path: 'git-cmd.md', file: file20 },
   { path: 'github-pages-https.md', file: file21 },
   { path: 'hexo-to-mine-service.md', file: file22 },
-  { path: 'linux/01_disk_partition.md', file: file24 },
-  { path: 'linux/02_command.md', file: file25 },
-  { path: 'linux/03_power_dir.md', file: file26 },
-  { path: 'linux/04_dir_manage.md', file: file27 },
-  { path: 'reasonml-notebook.md', file: file28 },
-  { path: 'windwows-tips.md', file: file29 }
+  { path: 'linux/01_disk_partition.md', file: file28 },
+  { path: 'linux/02_command.md', file: file29 },
+  { path: 'linux/03_power_dir.md', file: file30 },
+  { path: 'linux/04_dir_manage.md', file: file31 },
+  { path: 'linux/centos-vm.md', file: file32 },
+  { path: 'reasonml-notebook.md', file: file33 },
+  { path: 'windwows-tips.md', file: file34 }
 ];

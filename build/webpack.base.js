@@ -2,7 +2,8 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const AngularCompilerPlugin = require('@ngtools/webpack').AngularCompilerPlugin;
 const StyleLintPlugin = require('stylelint-webpack-plugin');
-const createMdImport = require('./create-md-import');
+const CopyPlugin = require('copy-webpack-plugin');
+// const createMdImport = require('./create-md-import');
 
 module.exports = {
   entry: {
@@ -103,6 +104,7 @@ module.exports = {
       xhtml: true,
       minify: true
     }),
+    new CopyPlugin([{ from: path.resolve(__dirname, '../src/assets/articles/img/'), to: 'assets/articles/img/' }]),
     // new StyleExtHtmlWebpackPlugin(path.resolve(__dirname, '../src/app/styles')),
     // new OptimizeCssAssetsPlugin({
     //   assetNameRegExp: /\.css$/g,

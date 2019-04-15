@@ -34,6 +34,30 @@
       margin-bottom: 48px;
     }
 
+    &-page-link {
+      &.disabled {
+        opacity: 0.6;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      &-pre {
+        .link-icon {
+          padding-right: 8px;
+        }
+      }
+
+      &-next {
+        text-align: right;
+
+        .link-icon {
+          padding-left: 8px;
+        }
+      }
+    }
+
     &-nav {
       position: fixed;
       right: 80px;

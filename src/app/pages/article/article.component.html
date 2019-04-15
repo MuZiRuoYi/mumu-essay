@@ -31,7 +31,21 @@
     </div>
   </div>
   <div class="article-page-links clearfix">
-    <div class="article-page-link-pre float-left">上一篇</div>
-    <div class="article-page-link-next float-right">下一篇</div>
+    <a
+      class="article-page-link article-page-link-pre float-left"
+      [ngClass]="{ disabled: preArticle.disabled }"
+      [href]="preArticle.href"
+    >
+      <div><fa-icon class="link-icon" [icon]="preIcon" size="lg"></fa-icon><span>上一篇</span></div>
+      <p>{{ preArticle.title }}</p>
+    </a>
+    <a
+      class="article-page-link article-page-link-next float-right"
+      [ngClass]="{ disabled: nextArticle.disabled }"
+      [href]="nextArticle.href"
+    >
+      <div><span>下一篇</span><fa-icon [icon]="nextIcon" class="link-icon" size="lg"></fa-icon></div>
+      <p>{{ nextArticle.title }}</p>
+    </a>
   </div>
 </div>

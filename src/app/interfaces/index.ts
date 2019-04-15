@@ -1,8 +1,8 @@
 import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 
 export interface Article {
-  title: String;
-  content: String;
+  title: string;
+  content: string;
   tags?: String[];
   time: String;
   path?: string;

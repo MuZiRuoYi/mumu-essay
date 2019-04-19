@@ -12,6 +12,6 @@ category: 'reasonml'
 
 ### 什么是 ReasonML？
 
-![Alt text](/img/reasonml_is.svg 'ReasonML-OCaml关系图')
+![Alt text](/assets/articles/img/reasonml_is.svg 'ReasonML-OCaml关系图')
 
 [阅读原文][originurl]

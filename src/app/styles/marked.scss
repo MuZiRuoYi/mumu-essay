@@ -86,4 +86,14 @@
   li {
     line-height: 25px;
   }
+
+  a[href] {
+    color: #3f51b5;
+    border-bottom: 1px dotted #3f51b5;
+
+    &:hover {
+      text-decoration-line: none;
+      border-bottom-style: solid;
+    }
+  }
 }

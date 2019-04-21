@@ -23,12 +23,13 @@ category: 'linux'
 
 1. **编辑文件**
 
-
-     vi /etc/sysconfig/network-scripts/ifcfg-eth0
+```shell
+$ vi /etc/sysconfig/network-scripts/ifcfg-eth0
+```
 
 配置改为：
 
-```conf
+```ini
 DEVICE=eth0
 HWADDR=00:0C:29:A6:79:C1
 TYPE=Ethernet
@@ -51,21 +52,25 @@ DNS2=202.103.24.68
 
 2. **测试网络**
 
-
-    ping www.baidu.com
+```shell
+$ ping www.baidu.com
+```
 
 能够正常联网后，通过 Xshell 连接改主机进行后续配置（Xshell 连接后配置更方便）。
 
 ### 安装 `wget`
 
-    yum install wget
+```shell
+$ yum install wget
+```
 
 #### 修改 `yum` 源到阿里云
 
 1. **备份本地源**
 
-
-    mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup
+```shell
+$ mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup
+```
 
 2. **安装阿里源**
 
@@ -73,15 +78,21 @@ DNS2=202.103.24.68
 
 CentOS 5：
 
-    wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-5.repo
+```shell
+$ wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-5.repo
+```
 
 CentOS 6：
 
-    wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-6.repo
+```shell
+$ wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-6.repo
+```
 
 CentOS 7：
 
-    wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
+```shell
+$ wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
+```
 
 ### 其他问题
 
@@ -89,11 +100,15 @@ CentOS 7：
 
 临时关闭防火墙：
 
-    servcie iptables stop
+```shell
+$ servcie iptables stop
+```
 
 永久关闭防火墙：
 
-    chkconfig iptables off
+```shell
+$ chkconfig iptables off
+```
 
 #### 局域网访问
 

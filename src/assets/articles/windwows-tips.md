@@ -25,6 +25,10 @@ tags: cmd
 
 修改这个路径下的键值：`EnableLUA`从`1`设置为`0`
 
+### hosts 文件目录
+
+    C:/Windows/System32/drivers/etc/
+
 ### 添加开机启动项
 
 将快捷方式放到文件夹：`C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp`

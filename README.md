@@ -2,7 +2,7 @@
 
 本项目目的在于搭建一套自己的博客，记录自己的一些工作学习生活的感想，以防止自己忘记来进行快速查阅；同时本项目也用于`Angular`学习。
 
-_此源码对应网站地址：[https://www.muziruoyi.com](https://www.muziruoyi.com)_
+~此源码对应网站地址：[https://www.muziruoyi.com](https://www.muziruoyi.com)~
 
 ## 搭建概览
 
